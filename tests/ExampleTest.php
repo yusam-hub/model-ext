@@ -13,7 +13,7 @@ class ExampleTest extends \PHPUnit\Framework\TestCase
             'title' => 'test',
         ]);
         var_dump($example1Model->modelExtAttributeNames());
-        var_dump($example1Model->modelExtToArray());
+        var_dump($example1Model->modelExtAttributes());
         var_dump($example1Model->modelExtAttributeGet('title'));
         $example1Model->createdAt = date("Y-m-d H:i:s");
         $example1Model->modifiedAt = date("Y-m-d H:i:s", time()+100000);

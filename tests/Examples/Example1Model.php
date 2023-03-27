@@ -9,6 +9,6 @@ class Example1Model extends ModelExt implements Example1ModelInterface
     use Example1Trait;
     public function __construct(array $attributes = [])
     {
-        $this->modelExtFromArray($attributes, false);
+        $this->modelExtImportAttributes($attributes, false);
     }
 }

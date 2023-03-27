@@ -29,13 +29,13 @@ trait ModelExtTrait
         return $this->modelExtAttributeNames;
     }
 
-    public function modelExtToArray(): array
+    public function modelExtAttributes(): array
     {
         $this->modelExtInit();
         return $this->modelExtAttributeValues;
     }
 
-    public function modelExtFromArray(array $attributes, bool $exceptionNotExists = true): void
+    public function modelExtImportAttributes(array $attributes, bool $exceptionNotExists = true): void
     {
         $this->modelExtInit();
         foreach ($attributes as $k => $v) {
