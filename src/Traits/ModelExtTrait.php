@@ -45,6 +45,7 @@ trait ModelExtTrait
 
     public function modelExtAttributeGet(string $name, $default = null, bool $exceptionNotExists = true)
     {
+        $this->modelExtInit();
         if (in_array($name, $this->modelExtAttributeNames)) {
             return $this->modelExtAttributeValues[$name];
         }
@@ -56,6 +57,7 @@ trait ModelExtTrait
 
     public function modelExtAttributeSet(string $name, $value, bool $exceptionNotExists = true): void
     {
+        $this->modelExtInit();
         if (in_array($name, $this->modelExtAttributeNames)) {
             $this->modelExtAttributeValues[$name] = $value;
             return;
