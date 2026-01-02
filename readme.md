@@ -1,10 +1,6 @@
 #### yusam-hub/model-ext
 
-    "php": "^7.4|^8.0|^8.1|^8.2"
-
-#### tests
-
-    sh phpinit
+    "php": ">=7.4 <9.0"
 
 #### setup
 
@@ -23,6 +19,8 @@
     "require": {
         ...
         "yusam-hub/php-compatibility": "dev-master",
+        "yusam-hub/php-compatibility": "^1.0",
         "yusam-hub/model-ext": "dev-master"
+        "yusam-hub/model-ext": "^1.0"
         ...
     }
